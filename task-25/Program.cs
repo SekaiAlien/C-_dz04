@@ -14,11 +14,10 @@ int degree = Convert.ToInt32(Console.ReadLine());
 int DegreeOfNum(int number)
 {
     int result = 1;
-    int count = 0;
-    while (count < degree)
+      
+    for (int i = 0; i < degree; i++)
     {
         result *= number;
-        count++;
     }
     return result;
 }
